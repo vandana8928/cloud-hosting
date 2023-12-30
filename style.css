@@ -5380,7 +5380,7 @@ figure{
 .whc_choose_plan_area {
 	background:white;
 	padding: 50px 0px 50px;
-	margin-bottom: -60px;
+	
 }
 .whc_choose_plan_area .rangeslider--horizontal .rangeslider__handle {
 	display: block;
@@ -8940,11 +8940,13 @@ figure{
 		align-items: center;
 	}
 	.whc_single_pricing_two{
-		margin: 10px 20px 10px;
+		margin: 10px 15px 10px;
 		flex-direction: column;
 	}
-	.advertisers-service-sec .container{
-		margin: 20px 30px 20px;
+	.whc_payment_collection_area .whc_single_pay_collection{
+		margin: 10px 20px 10px;
+		margin-left: 40px;
+		flex-direction: column;
 	}
 	.flex-container .flex-box{
 		flex-direction: column;
@@ -8965,113 +8967,6 @@ figure{
 
 
 
-.sec-icon {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.sec-icon::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  left: -70px;
-  margin-top: -5.5px;
-  top: 60%;
-  background: #333333;
-  width: 50px;
-}
-
-.sec-icon::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  right: -70px;
-  margin-top: -5.5px;
-  top: 60%;
-  background: #333;
-  width: 50px;
-}
-
-.advertisers-service-sec {
-  background-color: #ffffff;
-}
-
-.advertisers-service-sec span {
-  color: rgb(255, 23, 131);
-}
-
-
-.advertisers-service-sec .col {
-  padding: 0 1em 1em 1em;
-  text-align: center;
-}
-
-.advertisers-service-sec .service-card {
-  width: 100%;
-  height: 100%;
-  padding: 2em 1.5em;
-  border-radius: 5px;
-  box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
-  cursor: pointer;
-  transition: 0.5s;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  background: white;;
-}
-.advertisers-service-sec h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: black;
-  margin: 1em 0;
-  z-index: 3;
-}
-
-.advertisers-service-sec p {
-  color: black;
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  z-index: 3;
-}
-
-.advertisers-service-sec .icon-wrapper {
- 
-  background-color:#e73653;
-  position: relative;
-  margin: auto;
-  font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: black;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-  z-index: 3;
- 
-}
-
-.advertisers-service-sec .service-card:hover:after {
-  top: 0%;
- 
-}
-.service-card:hover{
-		border-color: aqua;
-		transform: scale(1.01);
-		background-color: whitesmoke;
-		box-shadow: 0 0px 5px 0px #cbc0c0;
-
-}
-.service-card .icon-wrapper {
-  background-color: white;
-  color: rgb(255, 23, 131);
-  color:#e73653;
-
-}
 
 /* ---------------------------------------------
 	   End of card section
@@ -9282,9 +9177,10 @@ article p {
 
 }
 /* start faq section*/
+
 .faq_section h3{
 text-transform: uppercase;
-padding-top: 30px;
+padding-top: 100px;
 }
 .layout { 
 	width: 98%; 
