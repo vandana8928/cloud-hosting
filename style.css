@@ -85,6 +85,7 @@ h1{
 	font-weight: 300;
 }
 
+
 h4{
 	font-size: 20px;
 	text-transform: capitalize;
@@ -166,7 +167,7 @@ input:focus,select:focus,button:focus{
 	width: 166px;
 	height: 46px;
 	line-height: 46px;
-	box-shadow: 0px 3px 7px 0px rgba(59, 59, 59, 0.1);
+	box-shadow: 0px 3px 7px 0px rgba(245, 242, 242, 0.1);
 	background: transparent;
 }
 .whc_price_buy a {
@@ -213,13 +214,13 @@ input:focus,select:focus,button:focus{
 	font-family: 'Ubuntu', sans-serif;
 }
 .whc_btn_two {
-	height: 58px;
+	height: 48px;
 	padding: 0px 28px;
-	background: #edf9fd;
+	background: #e73653;
 	line-height: 58px;
 	text-transform: uppercase;
-	font-weight: 700;
-	color: #3e414d;
+	font-weight: 400;
+	color:black;
 	border-radius: 5px;
 	position: relative;
 	border-bottom: 3px solid #e4e9e9;
@@ -231,9 +232,9 @@ input:focus,select:focus,button:focus{
 	color: #fff;
 }
 .whc_btn_two:hover {
-	color: #fff;
-	background: #3e414d !important;
-	border-bottom: 3px solid #3e414d;
+	color:black;
+	background: white !important;
+	border-bottom: 3px solid white;
 }
 .whc_btn_two.blue:hover {
 	background: #3e414d;
@@ -268,14 +269,15 @@ input:focus,select:focus,button:focus{
 	background: transparent;
 	border-radius: 5px;
 	font-size: 16px;
-	color: #00bdfd;
+	color:#e83a4f;
 	font-weight: 600;
 	border: 1px solid #c4c6d2;
+	text-transform: uppercase;
 }
 .whc_btn_three:hover {
-	color: #fff;
-	background: #3e414d;
-	border: 1px solid #3e414d;
+	color:black;
+	background: white;
+	border: 1px solid #0b0b0b;
 }
 .whc_btn_four {
 	height: 50px;
@@ -1982,16 +1984,31 @@ whc_pricing_two_btn .whc_btn_one,
 	padding: 140px 0px 135px;
 }
 .whc_pricing_two_head {
-	text-align: center;
+
 	padding: 40px 0px;
-	background: #f1f6fb;
+	background:white;
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	margin-left: 10px;
 }
+
+.whc_single_pricing_two {
+     box-shadow: 2px 2.732px 10px 2px rgba(55, 54, 54, 0.28);
+	 	
+}
+
+.whc_single_pricing_two:hover{
+	border-color: black;
+    transform: scale(1.01);
+    background-color: white;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
 .whc_pricing_two_head p {
 	font-size: 18px;
 	color: #3e414d;
+	margin-left: 2px;
 }
 .whc_pricing_two_head p span{	
 	color: #666;
@@ -2010,6 +2027,7 @@ whc_pricing_two_btn .whc_btn_one,
 	font-size: 26px;
 	color: #3e414d;
 	font-weight: 700;
+	
 	text-transform: uppercase;
 	margin-bottom: 18px;
 }
@@ -2030,17 +2048,21 @@ whc_pricing_two_btn .whc_btn_one,
 	font-size: 32px;
 	font-weight: 700;
 	color: #3e414d;
+	
 }
 .whc_pricing_two_currency p sub {
 	font-size: 24px;
 	font-weight: 700;
 	color: #3e414d;
 	bottom: 0;
+	
+	
 }
 .whc_pricing_two_currency p span{
 	font-size: 22px;
 	font-weight: 400;
 	color: #777777;
+	
 }
 .whc_pricing_two_list ul li {
 	height: 50px;
@@ -2048,7 +2070,7 @@ whc_pricing_two_btn .whc_btn_one,
 	padding: 0px 70px;
 }
 .whc_pricing_two_list ul li:nth-child(2n) {
-	background: #f1f6fb;
+	background:white;
 }
 .whc_pricing_two_list ul li i {
 	color: #3e414d;
@@ -2058,6 +2080,8 @@ whc_pricing_two_btn .whc_btn_one,
 .whc_pricing_two_list li {
 	font-size: 16px;
 	color: #777777;
+	text-transform: capitalize;
+	margin-left: 10px;
 }
 .whc_pricing_two_list li:hover a, 
 .whc_pricing_two_list li:hover a i{
@@ -2065,7 +2089,8 @@ whc_pricing_two_btn .whc_btn_one,
 }
 .whc_pricing_two_btn {
 	text-align: center;
-	background: #f1f6fb;
+    background-color: white;
+	
 	height: 140px;
 	display: flex;
 	align-items: center;
@@ -2243,9 +2268,7 @@ whc_pricing_two_btn .whc_btn_one,
 	transform: translateY(-50%);
 	padding: 90px;
 }
-.whc_pricing_two_list {
-	text-align: center;
-}
+
 /*service two*/
 
 /*terminator two*/
@@ -2696,8 +2719,7 @@ whc_pricing_two_btn .whc_btn_one,
 /*  == Banner Css == */
 
 /* == Search Domain Css ==*/
-.whc_search_domain_area {
-}
+
 .whc_domain_content_form_part {
 	text-align: center;
 }
@@ -3078,7 +3100,7 @@ whc_pricing_two_btn .whc_btn_one,
 
 /* == Payment Collection Css == */
 .whc_payment_collection_area {
-	padding: 130px 0px 140px;
+	padding: 130px 0px 10px;
 }
 .whc_single_pay_collection .span {
 	position: absolute;
@@ -3095,18 +3117,26 @@ whc_pricing_two_btn .whc_btn_one,
 	border: 1px solid;
 	display: inline-block;
 	border-radius: 50%;
-	font-size: 45px;
-	color: #7e8183;
-	border: 1px solid #7e8183;
+	font-size: 35px;
+	color:#e93d4f;
+	border: 1px solid #e93d4f;
 	margin-bottom: 40px;
 }
 .whc_single_pay_collection {
 	text-align: center;
 	position: relative;
-	box-shadow: 0px 10px 48.96px 2.04px rgba(0, 0, 0, 0.25);
+	transition: all .2s linear;
+	box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
 	padding: 50px;
 	overflow: hidden;
 	border-radius: 5px;
+}
+.whc_single_pay_collection:hover{
+	border-color: black;
+		transform: scale(1.01);
+		background-color: white;
+		box-shadow: 0 0px 5px 0px #cbc0c0;
+
 }
 .whc_single_pay_collection svg {
 	height: 309px;
@@ -3125,11 +3155,12 @@ whc_pricing_two_btn .whc_btn_one,
 	color: #3e414d;
 	font-weight: 700;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 .whc_single_pay_collection p{
 	font-size: 16px;
 	color: #3e414d;
-	line-height: 25px;
+	line-height: 20px;
 }
 /* == Payment Collection Css == */
 
@@ -5349,6 +5380,7 @@ figure{
 .whc_choose_plan_area {
 	background:white;
 	padding: 50px 0px 50px;
+	margin-bottom: -60px;
 }
 .whc_choose_plan_area .rangeslider--horizontal .rangeslider__handle {
 	display: block;
@@ -7322,7 +7354,10 @@ figure{
 	}
 	.whc_payment_collection_area {
 		padding: 130px 0px 110px;
+		margin-bottom: 50px;
 	}
+	
+
 	.whc_widget_three {
 		margin-bottom: 50px;
 	}
@@ -8892,6 +8927,33 @@ figure{
 	.adds-thumbnails h3 {
 		font-size: 24px;
 	}
+	.whc_footer_top_main{
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		gap: 40px;
+	}
+	
+	.whc_section_title{
+		text-align: center;
+		font-size: 30px;
+		align-items: center;
+	}
+	.whc_single_pricing_two{
+		margin: 10px 20px 10px;
+		flex-direction: column;
+	}
+	.advertisers-service-sec .container{
+		margin: 20px 30px 20px;
+	}
+	.flex-container .flex-box{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+	}
+	
+
 	/*subscribe*/
 }
 /* ---------------------------------------------
@@ -8902,9 +8964,7 @@ figure{
 --------------------------------------------- */
 
 
-.advertisers-service-sec{
-	background:white;
-}
+
 .sec-icon {
   position: relative;
   display: inline-block;
@@ -8935,7 +8995,7 @@ figure{
 }
 
 .advertisers-service-sec {
-  background-color: whitesmoke;
+  background-color: #ffffff;
 }
 
 .advertisers-service-sec span {
@@ -8953,7 +9013,7 @@ figure{
   height: 100%;
   padding: 2em 1.5em;
   border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
   cursor: pointer;
   transition: 0.5s;
   position: relative;
@@ -8963,7 +9023,7 @@ figure{
 }
 .advertisers-service-sec h3 {
   font-size: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 600;
   color: black;
   margin: 1em 0;
@@ -9040,12 +9100,13 @@ figure{
     cursor: pointer;
     border-radius: 10px;
     background-color: white;
-    border: 1px solid #10102a;
+   
     transition: all .2s linear;
 	font-size: 25px;
 	font-weight: 400;
 	text-align: center;
 	overflow: hidden;
+	box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
 }
 .flex-box p{
 	font-size: 15px;
@@ -9062,30 +9123,15 @@ figure{
 	
  
 }
-
-.button1{
-	width: 100%;
-	height: 40px;
-	padding:5px;
-	color: black;
-	text-transform: uppercase;
-	font-weight: 300;
-	background-color:#e73653;
-	transition: 0.4s ease;
-	font-family: bold;
-}
-
-
-
 /* Clients Review Section */
 .customer_review_sec{
-  background: whitesmoke;
+  background: white;
 }
 .customer_review_sec h3{
 	text-transform: uppercase;
 	padding-top: 30px;
 }
-.container {
+.customer_review_sec .container{
     width: 100%;
     height: 100vh;
     color: black;
@@ -9093,7 +9139,7 @@ figure{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-	background: whitesmoke;
+	background: white;
    
 }
 
@@ -9139,10 +9185,18 @@ h2 {
     padding: 10px;
     margin: 1rem;
     cursor: pointer;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid #10102a;
+    border-radius: 6px;
+    background-color: white;  
     transition: all .2s linear;
+	box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
+}
+.top h3{
+	color: #000;
+	font-family: bold;
+	margin-left:  0px 0px 10px 0px;
+	font-size: 15px;
+	
+
 }
 
 .reviewItem:hover {
@@ -9176,6 +9230,7 @@ article p {
     margin-bottom: 1rem;
     font-family: system-ui;
 	color: #10102a;
+
 }
 
 
@@ -9226,8 +9281,8 @@ article p {
 		box-shadow: 0 0px 5px 0px #cbc0c0;
 
 }
-/* start fqa section*/
-.fqa_section h3{
+/* start faq section*/
+.faq_section h3{
 text-transform: uppercase;
 padding-top: 30px;
 }
@@ -9241,9 +9296,10 @@ padding-top: 30px;
 	padding: 10px; 
 	margin-top: 10px; 
 	margin-bottom: 10px; 
-	background:#f1f6fb; 
+	background:white; 
 	border-radius:10px; 
 	justify-content: center;
+	box-shadow: 2px 2.732px 10px 2px rgba(55, 54, 54, 0.28);
   } 
   .accordion__question p { 
 	text-transform: uppercase;
@@ -9284,6 +9340,7 @@ padding-top: 30px;
 	margin-right: 40px;
 	margin-top: 10px;
 	font-size: 15px;
+	margin-bottom: 20px;
   }
   .accordion__question .icons.active{
 	transform: rotate(-180deg);
@@ -9318,13 +9375,13 @@ padding-top: 30px;
   #buttons li {
 	float: left;
 	list-style: none;
-	background-color:#e43159;
+	background-color:white;
 	margin:30px 100px;
 	width: 400px;
 	line-height: 60px;
 	display: inline;
-	
-    border-radius: 2px solid black;
+    border-radius: 50px 20px solid black;
+	box-shadow:rgba(55, 54, 54, 0.28) 2px 2.732px 10px 2px;
   
   }
   #buttons li a {
@@ -9342,7 +9399,7 @@ padding-top: 30px;
   #buttons li a:hover {
 	text-decoration: none;
 	color:black;
-	background-color: #e43159;
+	background-color:#eb4345;
    
   }
   .contain{
@@ -9489,34 +9546,247 @@ padding-top: 30px;
   #mydiv p{
 	padding: 20px;
   }
-
-.btn_a_main{
-	text-transform: uppercase;
-	font-size: 15px;
-	transition: 0.4s ease;
-	background-color:#e73653;
-	color: black;
-	
-}
 .btn_a_two{
 	text-transform: lowercase;
 	font-size: 15px;
     background-color:#e73653;
 	color: black;
-
 }
 .fqa_btn{
 	justify-content: center;
 	text-align: center;
 }
-.fqa_btn a{
-	width: 100px;
-}
-/* ---------------------------------------------
-	   End responsive CSS
----------------------------------------------
 
-  
+
+/* ---------------------------------------------
+	   contact us form
+---------------------------------------------*/
+.container{
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #e63554;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: black;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #e63554;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #e63554;
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+/* ---------------------------------------------
+	   about us page
+--------------------------------------------- */
+
+#aboutUs {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content .description {
+	width: auto;
+    color: black;
+    margin: 40px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 100;
+	text-align: justify;
+
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px;
+    cursor: pointer;
+	color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.4s;
+	color:black;
+	background-color:#e83a4f;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+    border: 2px;
+    background: transparent;
+    color: #e53456;
+   
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
+        width: 80%;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+	
+}
+.whc_decenter_sn_addresses .active h1{
+	font-weight: 400;
+	font-size: 70px;
+}
+.call_btn{
+color: #000;
+}
+
+@media only screen and (max-width: 340px) {
+	.whc_footer_top_main {
+	  align-items: center;
+	  text-align: center;
+	  flex-direction: column;
+	}
+  }
+.whatsapp_main{
+	position: fixed;
+	bottom: 40px;
+	right:20px;
+	text-align: right;
+	z-index: 10;
+}
+u{
+	
+	text-decoration-line: underline;
+	text-decoration-color: black;
+}
+/*-----------------end of about page--------*/
+
 /* ---------------------------------------------
 	   End responsive CSS
 --------------------------------------------- 
