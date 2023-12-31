@@ -348,10 +348,10 @@
               </p>
               <form action="#" method="get">
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your name"   id="name" />
+                  <input type="text" placeholder="Enter your name"  required id="Name" />
                 </div>
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your email"   id="email"/>
+                  <input type="text" placeholder="Enter your email" required  id="Email"/>
                 </div>
                 <div class="input-box message-box">
                   <textarea
@@ -359,11 +359,11 @@
                     id="message"
                     name="message"
                     rows="4"
-                    
+                    required
                   ></textarea>
                 </div>
                 <div class="button">
-                  <input type="button" value="Send Now"  onclick="send()"/>
+                  <input type="button" value="Send Now" onclick="send()"/>
                 </div>
               </form>
             </div>
@@ -1044,16 +1044,22 @@
     <script src="js/main.js"></script>
     <script>
       function send(){
-        console.log("function call");
+        let name=document.getElementById("Name").value;
+        let email=document.getElementById("Email").value;
+        let msg=document.getElementById("message").value;
+        let body="Name:  "+name+"<br> Email:  "+email+"<br>message:  "+msg;
+
+     console.log(body);
+     
         Email.send({
           Host : "smtp.elasticemail.com",
-          Username : "yvandana89282@gmail.com",
-          Password : "215E573C65DBFF229A2F05E58FE6548BA1C7",
-          To : 'yvandana89282@gmail.com',
-          From : document.getElementById("email").value,
+          Username : "yvandana8928@gmail.com",
+          Password : "0547B1D30CD5360F70D4C65581F1814CF422",
+          To : 'vandanayadav8286@gmail.com',
+          From : "yvandana8928@gmail.com",
           Subject : "This is the subject",
-          Body : "And this is the body"
-      }).then(
+          Body : body,
+        }).then(
         message => alert(message)
       );
       }

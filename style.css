@@ -8955,7 +8955,10 @@ figure{
 
 	}
 	
+    .faq_section .whc_section_title h3{
+		margin-top: 80px;
 
+	}
 	/*subscribe*/
 }
 /* ---------------------------------------------
@@ -9024,7 +9027,7 @@ figure{
 }
 .customer_review_sec h3{
 	text-transform: uppercase;
-	padding-top: 30px;
+	
 }
 .customer_review_sec .container{
     width: 100%;
@@ -9180,7 +9183,7 @@ article p {
 
 .faq_section h3{
 text-transform: uppercase;
-padding-top: 100px;
+padding-top: 10px;
 }
 .layout { 
 	width: 98%; 
@@ -9238,9 +9241,11 @@ padding-top: 100px;
 	font-size: 15px;
 	margin-bottom: 20px;
   }
-  .accordion__question .icons.active{
+  
+  .active .icons{
 	transform: rotate(-180deg);
   }
+  
 /* ----------------- legal page design--------------------------*/
 
 
