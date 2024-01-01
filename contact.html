@@ -68,7 +68,7 @@
       <!-- ========== Start Header Area ============= -->
       <header class="whc_header_area headroom">
         <!-- Start middle toolbar -->
-      <!--  <section class="whc_middle_toolbar">
+        <!--  <section class="whc_middle_toolbar">
           <div class="whc_main_container">
             <div class="row">
               <div class="col-auto mr-auto">
@@ -142,10 +142,14 @@
                     </li>
 
                     <li>
-                      
                       <div class="whc_header_main_btn">
-                        <a class="whc_btn_three call_btn" href="" data-toggle="modal" data-target="#bd_example_modal_lg3">
-                            Call now
+                        <a
+                          class="whc_btn_three call_btn"
+                          href=""
+                          data-toggle="modal"
+                          data-target="#bd_example_modal_lg3"
+                        >
+                          Call now
                         </a>
                       </div>
                       <ul class="sub_menu">
@@ -175,14 +179,19 @@
                   </ul>
                 </nav>
               </div>
-              
+
               <div class="col-auto">
                 <div class="whc_header_main_btn">
-                    <a class="whc_btn_three" href="" data-toggle="modal" data-target="#bd_example_modal_lg3">
-                        My Account
-                    </a>
+                  <a
+                    class="whc_btn_three"
+                    href=""
+                    data-toggle="modal"
+                    data-target="#bd_example_modal_lg3"
+                  >
+                    My Account
+                  </a>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </section>
@@ -227,13 +236,11 @@
             <div class="bottom_nav">
               <div id="mobile-logo">
                 <a href="index.html">
-                  
                   <img
-                  src="images/CatalystArtboard.png"
-                  alt="logo"
-                  style="height: 50px"
-                />
-
+                    src="images/CatalystArtboard.png"
+                    alt="logo"
+                    style="height: 50px"
+                  />
                 </a>
               </div>
               <div class="toggle-inner"></div>
@@ -248,10 +255,10 @@
             <div class="mobile_accor_logo">
               <a href="index.html">
                 <img
-                      src="images/CatalystArtboard.png"
-                      alt="logo"
-                      style="height: 50px"
-                    />
+                  src="images/CatalystArtboard.png"
+                  alt="logo"
+                  style="height: 50px"
+                />
               </a>
             </div>
             <div class="close-menu">
@@ -269,7 +276,6 @@
               <li>
                 <a href="#">Dedicated hosting</a>
               </li>
-             
             </ul>
           </nav>
           <form action="#" id="moble-search">
@@ -315,7 +321,7 @@
           </div>
         </div>
       </section>
-<hr>
+      <hr />
       <section>
         <div class="container">
           <div class="content">
@@ -348,10 +354,28 @@
               </p>
               <form action="#" method="get">
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your name"  required id="Name" />
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                    id="Name"
+                  />
                 </div>
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your email" required  id="Email"/>
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                    id="Email"
+                  />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="tel"
+                    placeholder="Enter your mobile"
+                    required
+                    id="mob"
+                  />
                 </div>
                 <div class="input-box message-box">
                   <textarea
@@ -363,7 +387,7 @@
                   ></textarea>
                 </div>
                 <div class="button">
-                  <input type="button" value="Send Now" onclick="send()"/>
+                  <input type="button" value="Send Now" onclick="send()" />
                 </div>
               </form>
             </div>
@@ -1019,7 +1043,7 @@
       </div>
       <!-- Sign up modal -->
     </div>
-   
+
     <!-- =============== JQUERY =============== -->
     <script src="js/jquery-2.1.4.min.js"></script>
 
@@ -1039,31 +1063,36 @@
     <script src="js/gmap3.min.js"></script>
 
     <!-- =============== MAIN JS =============== -->
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
     <script>
-      function send(){
-        let name=document.getElementById("Name").value;
-        let email=document.getElementById("Email").value;
-        let msg=document.getElementById("message").value;
-        let body="Name:  "+name+"<br> Email:  "+email+"<br>message:  "+msg;
+      function send() 
+      {
+        let name = document.getElementById("Name").value;
+        let email = document.getElementById("Email").value;
+        let msg = document.getElementById("message").value;
+        let mob = document.getElementById("mob").value;
 
-     console.log(body);
-     
+        let body =
+          "Name:  " +
+          name +
+          "<br> Email:  " +
+          email +
+          "<br> mob: " +
+          mob +
+          "<br>message:" +
+          msg;
+
         Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "yvandana8928@gmail.com",
-          Password : "0547B1D30CD5360F70D4C65581F1814CF422",
-          To : 'vandanayadav8286@gmail.com',
-          From : "yvandana8928@gmail.com",
-          Subject : "This is the subject",
-          Body : body,
-        }).then(
-        message => alert(message)
-      );
+          Host: "smtp.elasticemail.com",
+          Username: "yvandana8928@gmail.com",
+          Password: "0547B1D30CD5360F70D4C65581F1814CF422",
+          To: "vandanayadav8286@gmail.com",
+          From: "yvandana8928@gmail.com",
+          Subject: "This is the subject",
+          Body: body,
+        }).then((message) => alert(message));
       }
-
     </script>
   </body>
 </html>
