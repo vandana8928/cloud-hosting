@@ -220,6 +220,7 @@ input:focus,select:focus,button:focus{
 	line-height: 58px;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-size: 15px;
 	color:black;
 	border-radius: 5px;
 	position: relative;
@@ -548,14 +549,16 @@ whc_pricing_two_btn .whc_btn_one,
 	font-family: 'Pacifico', cursive;
 	width: 100%;
 	height: 100vh;
-	background-color: #c0d8e1;
+	background-color: hsl(351, 78%, 56%);
+
 	overflow: hidden;
 	z-index: 999999;
 }
 .sun-circle h1 {
-	color: #B1E4D5;
+	color:white;
 	font-size: 2vmax;
 	line-height: 15vmax;
+	font-weight: 10px;
 	font-family: 'Pacifico', cursive;
 }
 .sun-circle{
@@ -566,13 +569,13 @@ whc_pricing_two_btn .whc_btn_one,
 	width:15vmax;
 	height:15vmax;
 	border-radius:50%;
-	background-color:#FD939F;
-	background-color:#3364B0;
+	background-color:hsl(353, 52%, 77%);
+	background-color:hwb(218 83% 13%);
 	text-align: center;
 	vertical-align: middle;
 	line-height: 12vmax; 
 	animation:chsize 2s infinite ;
-	background: radial-gradient(ellipse at center,#3364B0 60%,#7db9e8 100%); 
+	background: radial-gradient(ellipse at center,hsl(351, 78%, 56%) 60%,#7db9e8 100%); 
 	box-shadow: 0 0 10px #fff , 0 0 5px #ffff , 0 0 5px #ffcccc ,0 0 10px #fff ,0 0 20px #fff,0 0 60px #fff;
 	animation: sunlight 2s ease-in-out 0s infinite alternate backwards ,tlo 200ms linear 2s infinite normal forwards;
 }
@@ -9500,7 +9503,7 @@ padding-top: 10px;
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: #3e2093;
+  color: #e63554;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -9621,7 +9624,7 @@ padding-top: 10px;
     color: black;
     margin: 40px 0px;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 30px;
     font-weight: 100;
 	text-align: justify;
 
@@ -9674,13 +9677,7 @@ color: #000;
 	  flex-direction: column;
 	}
   }
-.whatsapp_main{
-	position: fixed;
-	bottom: 40px;
-	right:20px;
-	text-align: right;
-	z-index: 10;
-}
+
 u{
 	
 	text-decoration-line: underline;
@@ -9693,7 +9690,7 @@ u{
 	padding: 16px 20px;
 	border: none;
 	cursor: pointer;
-	opacity: 0.8;
+	
 	position: static;
 	bottom: 23px;
 	font-size: 15px;

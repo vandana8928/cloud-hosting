@@ -36,5 +36,5 @@ function closeForm() {
 
 const buttons = document.querySelectorAll('.buttons');
 buttons.forEach(button => {
-    button.addEventListener('click', send);
+    button.addEventListener('click');
 });
