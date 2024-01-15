@@ -1987,7 +1987,8 @@ whc_pricing_two_btn .whc_btn_one,
 
 /*pricing two*/
 .whc_pricing_two_area {
-	padding: 140px 0px 135px;
+	padding: 100px 0px 0px;
+	
 }
 .whc_pricing_two_head {
 
